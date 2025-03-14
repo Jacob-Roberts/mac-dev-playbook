@@ -1,0 +1,110 @@
+---
+configure_dotfiles: true
+stow_dotfiles: true
+configure_dock: true
+configure_sudoers: false
+configure_terminal: false
+configure_osx: true
+configure_sublime: false
+
+homebrew_installed_packages:
+  - ansible
+  - oven-sh/bun/bun
+  - gh
+  - git
+  - go
+  - iperf3
+  - node
+  - openssl
+  - python
+  - sqlite
+  - tailscale
+  - stow
+  - wget
+
+homebrew_cask_apps:
+  - android-studio
+  - brave-browser
+  - brave-browser@beta
+  - discord
+  - ghostty
+  - localsend
+  - maccy
+  - monitorcontrol
+  - orbstack
+  - raspberry-pi-imager
+  - rectangle
+  - rustdesk
+  - scroll-reverser
+  - signal
+  - signal@beta
+  - spotify
+  - virtualbox
+  - visual-studio-code
+  - zed
+  - zoom
+
+mas_installed_apps:
+  - { id: 1352778147, name: "Bitwarden" }
+  - { id: 1502839586, name: "Hand Mirror" }
+
+dotfiles_repo: https://github.com/Jacob-Roberts/dotfiles.git
+dotfiles_repo_local_destination: ~/.dotfiles
+
+dockitems_remove:
+  - TV
+  - Podcasts
+  - 'App Store'
+  - 'iPhone Mirroring'
+dockitems_persist:
+  - name: "Launchpad"
+    path: "/Applications/Launchpad.app"
+    pos: 1
+  - name: "Calendar"
+    path: "/Applications/Calendar.app"
+    post: 2
+  - name: "Brave Browser"
+    path: "/Applications/Brave Browser.app"
+    pos: 3
+  - name: "Reminders"
+    path: "/Applications/Reminders.app"
+    pos: 4
+  - name: "Spotify"
+    path: "/Applications/Spotify.app"
+    pos: 5
+  - name: "WhatsApp"
+    path: "/Applications/WhatsApp.app"
+    pos: 6
+  - name: "Signal"
+    path: "/Applications/Signal.app"
+    pos: 7
+  - name: "Messages"
+    path: "/Applications/Messages.app"
+    pos: 8
+  - name: "Notes"
+    path: "/Applications/Notes.app"
+    pos: 9
+  - name: "Google Photos"
+    path: "~/Applications/Brave Browser Apps/Google Photos.app"
+    pos: 10
+  - name: "Spotify-Jake"
+    path: "~/Applications/Brave Browser Beta Apps/Spotify-Jake.app"
+    pos: 12
+  - name: "Ghostty"
+    path: "/Applications/Ghostty.app"
+    pos: 13
+  - name: "Signal Beta"
+    path: "/Applications/Signal Beta.app"
+    pos: 14
+  - name: "Visual Studio Code"
+    path: "/Applications/Visual Studio Code.app"
+    pos: 15
+  - name: "Brave Browser Beta"
+    path: "/Applications/Brave Browser Beta.app"
+    pos: 16
+  - name: "WhatsApp Web"
+    path: "~/Applications/Brave Browser Beta Apps/WhatsApp Web.app"
+    pos: 17
+  - name: "Discord"
+    path: "/Applications/Discord.app"
+    pos: 18

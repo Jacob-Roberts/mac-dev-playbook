@@ -1,0 +1,32 @@
+---
+- name: Clone dotfiles repository
+  git:
+    repo: "{{ dotfiles_repo }}"
+    dest: "{{ dotfiles_repo_local_destination }}"
+    clone: yes
+    update: yes
+
+- name: Create ~/.config directory
+  ansible.builtin.file:
+    path: ~/.config
+    state: directory
+
+- name: Run stow for zsh
+  shell: "stow --dir {{ dotfiles_repo_local_destination }} zsh"
+  register: result
+  changed_when: 'result.stderr is search("LINK: ")'  
+
+- name: Run stow for ghostty
+  shell: "stow --dir {{ dotfiles_repo_local_destination }} ghostty"
+  register: result
+  changed_when: 'result.stderr is search("LINK: ")'
+
+- name: Run stow for git
+  shell: "stow --dir {{ dotfiles_repo_local_destination }} git"
+  register: result
+  changed_when: 'result.stderr is search("LINK: ")'
+
+- name: Run stow for zed
+  shell: "stow --dir {{ dotfiles_repo_local_destination }} zed"
+  register: result
+  changed_when: 'result.stderr is search("LINK: ")'
