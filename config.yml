@@ -32,6 +32,7 @@ homebrew_cask_apps:
   - maccy
   - monitorcontrol
   - orbstack
+  - postman
   - raspberry-pi-imager
   - rectangle
   - rustdesk
@@ -87,24 +88,33 @@ dockitems_persist:
   - name: "Google Photos"
     path: "~/Applications/Brave Browser Apps/Google Photos.app"
     pos: 10
+  - name: "" # Spacer
+    path: ""
+    pos: 11
   - name: "Spotify-Jake"
     path: "~/Applications/Brave Browser Beta Apps/Spotify-Jake.app"
     pos: 12
+  - name: "Brave Browser Beta"
+    path: "/Applications/Brave Browser Beta.app"
+    pos: 13
   - name: "Ghostty"
     path: "/Applications/Ghostty.app"
-    pos: 13
-  - name: "Signal Beta"
-    path: "/Applications/Signal Beta.app"
     pos: 14
   - name: "Visual Studio Code"
     path: "/Applications/Visual Studio Code.app"
-    pos: 15
-  - name: "Brave Browser Beta"
-    path: "/Applications/Brave Browser Beta.app"
     pos: 16
+  - name: "Postman"
+    path: "/Applications/Postman.app"
+    pos: 17
+  - name: "Signal Beta"
+    path: "/Applications/Signal Beta.app"
+    pos: 18
   - name: "WhatsApp Web"
     path: "~/Applications/Brave Browser Beta Apps/WhatsApp Web.app"
-    pos: 17
+    pos: 19
   - name: "Discord"
     path: "/Applications/Discord.app"
-    pos: 18
+    pos: 20
+  - name: "System Settings"
+    path: "/Applications/System Settings.app"
+    pos: 21
