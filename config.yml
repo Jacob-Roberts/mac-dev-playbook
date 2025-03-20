@@ -55,8 +55,16 @@ dotfiles_repo_local_destination: ~/.dotfiles
 dockitems_remove:
   - TV
   - Podcasts
-  - 'App Store'
-  - 'iPhone Mirroring'
+  - "App Store"
+  - "iPhone Mirroring"
+  - Maps
+  - Photos
+  - FaceTime
+  - Contacts
+  - Freeform
+  - Music
+  - News
+  - Safari
 dockitems_persist:
   - name: "Launchpad"
     path: "/Applications/Launchpad.app"
