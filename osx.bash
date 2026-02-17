@@ -78,7 +78,7 @@ defaults write NSGlobalDomain ContextMenuGesture -int 1
 ###############################################################################
 
 # Save screenshots to Downloads folder.
-defaults write com.apple.screencapture location -string "${HOME}/Downloads"
+defaults write com.apple.screencapture "location" -string "${HOME}/Downloads"
 
 # Save screenshots in PNG format (other options: BMP, GIF, JPG, PDF, TIFF)
 defaults write com.apple.screencapture type -string "png"
@@ -106,6 +106,12 @@ defaults write com.apple.finder QLEnableTextSelection -bool true
 
 # Display full POSIX path as Finder window title
 defaults write com.apple.finder _FXShowPosixPathInTitle -bool true
+
+# Keep folders on top
+defaults write com.apple.finder "_FXSortFoldersFirst" -bool "true"
+
+# Empty trash every 30 days
+defaults write com.apple.finder "FXRemoveOldTrashItems" -bool "true"
 
 # When performing a search, search the current folder by default
 defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
@@ -209,6 +215,12 @@ defaults write com.apple.ActivityMonitor ShowCategory -int 0
 
 # Disable in-app rating requests from apps downloaded from the App Store.
 defaults write com.apple.appstore InAppReviewEnabled -int 0
+
+###############################################################################
+# Apple Intelligence.                                                         #
+###############################################################################
+
+defaults write com.apple.CloudSubscriptionFeatures.optIn "545129924" -bool "false"
 
 ###############################################################################
 # Kill/restart affected applications                                          #
