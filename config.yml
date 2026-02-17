@@ -9,39 +9,57 @@ configure_sublime: false
 
 homebrew_installed_packages:
   - ansible
-  - oven-sh/bun/bun
+  - bat
+  - bun
+  - crush
+  - dockutil
+  - eza
+  - fzf
   - gh
   - git
+  - glow
   - go
+  - gum
   - iperf3
-  - node
-  - openssl
+  - kompose
+  - mas
+  - mise
+  - neovim
+  - nmap
+  - opencode
+  - opentofu
+  - pnpm
+  - podlet
   - python
   - sqlite
-  - tailscale
+  - starship
   - stow
+  - tailscale
+  - uv
   - wget
+  - zoxide
 
 homebrew_cask_apps:
-  - android-studio
   - brave-browser
   - brave-browser@beta
+  - bruno
+  - db-browser-for-sqlite
   - discord
+  - font-hack-nerd-font
   - ghostty
   - localsend
   - maccy
   - monitorcontrol
+  - netbird-ui
   - orbstack
-  - postman
   - raspberry-pi-imager
   - rectangle
   - rustdesk
   - scroll-reverser
   - signal
   - signal@beta
-  - spotify
-  - virtualbox
   - visual-studio-code
+  - vscodium
   - zed
   - zoom
 
@@ -51,6 +69,7 @@ mas_installed_apps:
 
 dotfiles_repo: https://github.com/Jacob-Roberts/dotfiles.git
 dotfiles_repo_local_destination: ~/.dotfiles
+dotfiles_repo_version: main
 
 dockitems_remove:
   - TV
@@ -78,8 +97,8 @@ dockitems_persist:
   - name: "Reminders"
     path: "/Applications/Reminders.app"
     pos: 4
-  - name: "Spotify"
-    path: "/Applications/Spotify.app"
+  - name: "Music"
+    path: "/Applications/Music.app"
     pos: 5
   - name: "WhatsApp"
     path: "/Applications/WhatsApp.app"
@@ -93,36 +112,31 @@ dockitems_persist:
   - name: "Notes"
     path: "/Applications/Notes.app"
     pos: 9
-  - name: "Google Photos"
-    path: "~/Applications/Brave Browser Apps/Google Photos.app"
-    pos: 10
   - name: "" # Spacer
     path: ""
+    pos: 10
+  - name: "Youtube Music"
+    path: "~/Applications/Brave Browser Beta Apps/YouTube Music.app"
     pos: 11
-  - name: "Spotify-Jake"
-    path: "~/Applications/Brave Browser Beta Apps/Spotify-Jake.app"
-    pos: 12
   - name: "Brave Browser Beta"
     path: "/Applications/Brave Browser Beta.app"
-    pos: 13
+    pos: 12
   - name: "Ghostty"
     path: "/Applications/Ghostty.app"
-    pos: 14
+    pos: 13
   - name: "Visual Studio Code"
     path: "/Applications/Visual Studio Code.app"
-    pos: 16
-  - name: "Postman"
-    path: "/Applications/Postman.app"
-    pos: 17
+    pos: 14
   - name: "Signal Beta"
     path: "/Applications/Signal Beta.app"
-    pos: 18
+    pos: 15
   - name: "WhatsApp Web"
     path: "~/Applications/Brave Browser Beta Apps/WhatsApp Web.app"
-    pos: 19
+    pos: 16
   - name: "Discord"
     path: "/Applications/Discord.app"
-    pos: 20
+    pos: 17
   - name: "System Settings"
     path: "/Applications/System Settings.app"
-    pos: 21
+    pos: 18
+
