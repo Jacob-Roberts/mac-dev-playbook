@@ -89,7 +89,7 @@ defaults write com.apple.screencapture type -string "png"
 
 # Set Desktop as the default location for new Finder windows
 # For other paths, use `PfLo` and `file:///full/path/here/`
-defaults write com.apple.finder NewWindowTarget -string "PfDe"
+defaults write com.apple.finder NewWindowTarget -string "PfLo"
 defaults write com.apple.finder NewWindowTargetPath -string "file://${HOME}"
 
 # Finder: show hidden files by default
@@ -104,8 +104,8 @@ defaults write com.apple.finder ShowStatusBar -bool true
 # Finder: allow text selection in Quick Look
 defaults write com.apple.finder QLEnableTextSelection -bool true
 
-# Display full POSIX path as Finder window title
-defaults write com.apple.finder _FXShowPosixPathInTitle -bool true
+# Don't display full POSIX path as Finder window title
+defaults write com.apple.finder _FXShowPosixPathInTitle -bool false
 
 # Keep folders on top
 defaults write com.apple.finder "_FXSortFoldersFirst" -bool "true"
@@ -134,6 +134,18 @@ defaults write com.apple.finder FXPreferredViewStyle -string "clmv"
 # Show the ~/Library folder
 chflags nohidden ~/Library
 
+# Show external hard drives on desktop
+defaults write com.apple.Finder ShowExternalHardDrivesOnDesktop -bool true
+
+# show removable media on desktop
+defaults write com.apple.Finder ShowRemovableMediaOnDesktop -bool true
+
+# show mounted servers on desktop
+defaults write com.apple.Finder ShowMountedServersOnDesktop -bool true
+
+# disable the warning before emptying the Trash
+defaults write com.apple.Finder WarnOnEmptyTrash -bool false
+
 ###############################################################################
 # Dock, Dashboard, and hot corners                                            #
 ###############################################################################
@@ -143,6 +155,9 @@ defaults write com.apple.dock showhidden -bool true
 
 # Enable the 'reduce transparency' option. Save GPU cycles.
 defaults write com.apple.universalaccess reduceTransparency -bool true
+
+# Don't show recents
+defaults write com.apple.dock show-recents -bool true   
 
 # Hot corners
 # Possible values:
